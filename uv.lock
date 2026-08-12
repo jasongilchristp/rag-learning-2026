@@ -1796,6 +1796,11 @@ dependencies = [
     { name = "rapidocr-onnxruntime" },
 ]
 
+[package.dev-dependencies]
+dev = [
+    { name = "ipykernel" },
+]
+
 [package.metadata]
 requires-dist = [
     { name = "beautifulsoup4", specifier = ">=4.15.0" },
@@ -1809,6 +1814,9 @@ requires-dist = [
     { name = "pytesseract", specifier = ">=0.3.13" },
     { name = "rapidocr-onnxruntime", specifier = ">=1.4.4" },
 ]
+
+[package.metadata.requires-dev]
+dev = [{ name = "ipykernel", specifier = ">=7.3.0" }]
 
 [[package]]
 name = "rapidocr-onnxruntime"
